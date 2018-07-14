@@ -2,7 +2,7 @@ create table product(
   id varchar(50) not null comment '产品编号',
   NAME varchar(50) not null comment '产品名称',
   threshold_amount decimal(15,3) NOT null comment '起投金额',
-  set_amount decimal(15,3) not null comment '投资步长',
+  step_amount decimal(15,3) not null comment '投资步长',
   lock_term smallint not null comment '锁定期',
   reward_rate decimal(5,3) not null comment '收益率，0-100 百分比值',
   STATUS varchar(20) not null comment '状态，AUDINTING:审核中,IN_SELL:销售中,LOCKED:暂停销售,FINISHED:已结束',
