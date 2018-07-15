@@ -118,7 +118,7 @@ public class ProductService {
             @Override
             public Predicate toPredicate(Root<Product> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
                 Expression<String> idCol = root.get("id");
-                Expression<BigDecimal> rewardRateCol = root.get("rewordRate");
+                Expression<BigDecimal> rewardRateCol = root.get("rewardRate");
                 Expression<String> statusCol = root.get("status");
                 List<Predicate> predicates = new ArrayList<>();
 
